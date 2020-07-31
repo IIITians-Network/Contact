@@ -1107,6 +1107,7 @@ textarea::-webkit-scrollbar-thumb:hover {
 }
 
 .send-btn {
+	display: block;
 	border-radius: 50px !important;
 	background-color: rgb(97, 200, 241) !important;
 }
@@ -1115,6 +1116,13 @@ textarea::-webkit-scrollbar-thumb:hover {
 	background-color: rgba(0, 179, 255) !important;
 }
 
+#clear-btn {
+	display: none;
+	outline: none;
+	border: none;
+	padding: 10px 20px;
+	color: #ffffff;
+}
 /* .contact .php-email-form .form-group {
 	background-color: #18d26e;
 } */
@@ -1211,6 +1219,47 @@ textarea::-webkit-scrollbar-thumb:hover {
 	}
 }
 
+#sent-msg-section {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #00000066;
+	display: none;
+}
+#sent-msg-section .fa-paper-plane {
+	position: absolute;
+	font-size: 150px;
+	transform: rotateX(50deg);
+	transform: rotateZ(20deg);
+	color: rgb(97, 164, 241);
+	animation: sent-plane 2s ease-out 1 forwards;
+}
+@keyframes sent-plane {
+	0% {
+		bottom: -90px;
+		left: -90px;
+	}
+	100% {
+		bottom: 90vh;
+		left: 100vw;
+	}
+}
+
+#follow-us {
+	font-size: 40px !important;
+	font-weight: 100 !important;
+	font-family: 'Montserrat', sans-serif;
+}
+#follow {
+	color: #222222;
+}
+#us {
+	color: rgb(0, 179, 255);
+	font-weight: 600;
+}
+
 .down-arrow {
 	position: relative;
 	color: #007bb5;
@@ -1231,51 +1280,40 @@ textarea::-webkit-scrollbar-thumb:hover {
 }
 
 .social-container {
-	/* background-color: slateblue; */
 	display: flex;
 	justify-content: center;
-	padding: 50px;
-	margin-top: -150px;
+	padding: 20px;
+	margin-top: -120px;
 }
 
-#follow-us {
-	font-size: 40px !important;
-	font-weight: 100 !important;
-	font-family: 'Montserrat', sans-serif;
-}
-#follow {
-	color: #222222;
-}
-#us {
-	color: rgb(0, 179, 255);
-	font-weight: 600;
-}
 .contact-mail a {
 	color: rgb(32, 111, 175);
 	font-family: 'Montserrat', sans-serif;
 }
-.contact-mail a:hover {
-  text-decoration: none;
-  color: rgb(7, 62, 163);
+.contact-mail a:hover, .contact-mail a:focus, .contact-mail a:active {
+	text-decoration: none;
+	outline: none;
+	color: rgb(7, 62, 163);
 }
 .social-links-container {
 	/* background-color: #1bbca3; */
-	padding: 40px;
+	padding: 20px 40px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-	margin: 20px auto;
-	font-size: 40px;
+	margin: 0px auto;
+	font-size: 60px;
 }
 .social-links-container a {
 	margin: 10px;
-	color: rgba(0, 150, 220, 0.8);
+	color: #666666cc;
 }
-.social-links-container a:hover {
+.social-links-container a:hover, .social-links-container a:focus, .social-links-container a:active {
 	text-decoration: none;
-	color: rgb(32, 111, 175);
+	outline: none;
+	color: #222222;
 }
 
 /* media queries------------------------------------------------------------------------------------------ */
@@ -1283,16 +1321,50 @@ textarea::-webkit-scrollbar-thumb:hover {
 	.contact-svg {
 		width: 500px;
 	}
+	#sent-msg-section .fa-paper-plane {
+		font-size: 100px;
+	}
 }
 @media screen and (max-width: 991.8px) {
 	.contact-svg {
 		width: 400px;
+	}
+	#sent-msg-section .fa-paper-plane {
+		font-size: 80px;
 	}
 }
 @media screen and (max-width: 850px) {
 	.contact-svg-container {
 		display: none;
 	}
+	/* .contact {
+		background-image: url(../../img/contact-image.svg);
+		background-color: #00000044;
+		background-blend-mode: overlay;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.form-group input {
+		background: transparent;
+	}
+	.form-group input::placeholder {
+		color: #ffffffcc;
+		font-size: 15px;
+	}
+	.form-group input:focus {
+		background-color: #ffffff33;
+	}
+	.form-group textarea {
+		background: transparent;
+	}
+	.form-group textarea:focus {
+		background-color: #ffffff44;
+	}
+	.form-group textarea::placeholder {
+		color: #ffffffcc;
+		font-size: 15px;
+	} */
 }
 @media screen and (max-width: 500px) {
 	.contact-container {
@@ -1306,6 +1378,9 @@ textarea::-webkit-scrollbar-thumb:hover {
 	}
 	.contact-mail {
 		font-size: 20px;
+	}
+	#sent-msg-section .fa-paper-plane {
+		font-size: 50px;
 	}
 }
 @media screen and (max-width: 370px) {
@@ -1321,6 +1396,22 @@ textarea::-webkit-scrollbar-thumb:hover {
 	.contact-mail {
 		font-size: 15px;
 	}
+}
+
+.mail-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 20px;
+	margin-top: -120px;
+	margin-bottom: 100px;
+}
+.mail-container a {
+	color: #666666;
+}
+.mail-container a:hover {
+	color: #000000;
 }
 
 /*--------------------------------------------------------------
