@@ -1,3 +1,4 @@
+<!-- @prettier -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,7 +9,10 @@
 		<meta charset="utf-8" />
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166050406-1"></script>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-166050406-1"
+		></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
@@ -21,7 +25,10 @@
 
 		<!-- Title of your page: add the name of your IIIT-->
 		<title>Contact | IIITians Network</title>
-		<meta content="This is Contact page of the community IIITians Network" name="descriptison" />
+		<meta
+			content="This is Contact page of the community IIITians Network"
+			name="descriptison"
+		/>
 		<!--You have to update the name of your IIIT in both these lines -->
 		<meta content="IIITians Network - Contact" name="keywords" />
 
@@ -34,20 +41,41 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Roboto&display=swap"
 			rel="stylesheet"
 		/>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 
 		<!-- Vendor CSS Files -->
-		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
 		<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+		<link
+			href="assets/vendor/boxicons/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
 		<link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
-		<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+		<link
+			href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+			rel="stylesheet"
+		/>
 		<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
 		<!-- Animation for text -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Anton"
+		/>
 		<link rel="stylesheet" href="./style.css" />
 
 		<!-- Font awesome icons-->
@@ -64,12 +92,19 @@
 		<link href="custom.css" rel="stylesheet" />
 
 		<!-- Carousel files -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 		<!--================================== STUDENT's LIFE CSS FILES =======================================================-->
-		<link rel="stylesheet" type="text/css" href="assets/css/studentsLife.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="assets/css/studentsLife.css"
+		/>
 		<!--================================== STUDENT's LIFE CSS FILE END =======================================================-->
 
 		<!--==================================Counter Up files ====================-->
@@ -81,8 +116,27 @@
 			crossorigin="anonymous"
 		></script>
 
+		<!-- auto hide navigation on scroll -->
+		<script type="text/javascript">
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function () {
+				var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos > currentScrollPos) {
+					document.getElementById('header').style.top = '0';
+				} else {
+					document.getElementById('header').style.top = '-75px';
+				}
+				prevScrollpos = currentScrollPos;
+			};
+		</script>
 		<!--==================================Counter Up files over ==============-->
 		<!--================= Loader Part start ===============-->
+		<!-- loader script -->
+		<script type="text/javascript">
+			$(window).load(function () {
+				$('.se-pre-con').fadeOut('slow');
+			});
+		</script>
 		<style>
 			.no-js #loader {
 				display: none;
@@ -100,72 +154,229 @@
 				width: 100%;
 				height: 100%;
 				z-index: 9999;
-				background: url('./img/loader/loader.gif') center no-repeat #fff;
+				background: url('./img/loader/loader_high_quality.gif') center
+					no-repeat #fff;
+			}
+			@media screen and (max-width: 760px) {
+				.se-pre-con {
+					background-size: contain;
+				}
+			}
+
+			/* black font in all iiit dropdown */
+			.all-iiit a {
+				color: #121212;
 			}
 		</style>
 		<!-- =================== Loader part ended=================== -->
 	</head>
 
 	<body>
+		<div class="se-pre-con"></div>
 		<!-- ======= Header ======= -->
 		<header id="header" class="fixed-top">
 			<div class="container-fluid d-flex">
 				<div class="logo mr-auto">
-					<a href="index.html"><img src="img/logo/iiitian.png" alt="" class="img-fluid" /></a>
+					<a href="index.html"
+						><img
+							src="img/logo/logo.png"
+							alt="Logo | IIITians Network | IIIT | Community | Indian Institute of Information Technology"
+							class="img-fluid"
+					/></a>
 				</div>
 
 				<nav class="nav-menu d-none d-lg-block">
 					<ul>
-						<li><a href="https://iiitiansnetwork.com/">Home</a></li>
-						<!--li><a href="">Counselling</a></li>
-                    <li><a href="">News</a></li>
-                    <li class="drop-down"><a href="">Login</a>
-                        <ul>
-                            <li><a href="#">Student</a></li>
-                            <li><a href="#">Clubs</a></li>
-                            <li class="drop-down"><a href="#">Register</a>
-                                <ul>
-                                    <li><a href="">Individual</a></li>
-                                    <li><a href="">Club</a></li>
-                                    <li><a href="">Non-IIIT Students</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li-->
 						<li>
-							<a href="http://team.iiitiansnetwork.com/">Our Team</a>
+							<a href="https://iiitiansnetwork.com">Home</a>
 						</li>
 						<li>
-							<a href="https://alliiit.iiitiansnetwork.com/">All IIIT</a>
-							<!--           	<ul>
-                  <li><a href="#">IIITM Gwalior</a></li>
-                  <li><a href="#">IIIT Allahabad</a></li>
-                  <li><a href="#">IIITDM Kancheepuram</a></li>
-                  <li><a href="#">IIITDM Jabalpur</a></li>
-                  <li><a href="#">IIITDM Kurnool</a></li>
-                  <li><a href="#">IIIT Chittoor</a></li>
-                  <li><a href="#">IIIT Guwahati</a></li>
-                  <li><a href="#">IIIT Kalyani</a></li>
-                  <li><a href="#">IIIT Una</a></li>
-                  <li><a href="#">IIIT Vadodara</a></li>
-                  <li><a href="#">IIIT Kota</a></li>
-                  <li><a href="#">IIIT Tiruchirappalli</a></li>
-                  <li><a href="#">IIIT Sonepat</a></li>
-                  <li><a href="#">IIIT Manipur</a></li>
-                  <li><a href="#">IIIT Lucknow</a></li>
-                  <li><a href="#">IIIT Dharward</a></li>
-                  <li><a href="#">IIIT Pune</a></li>
-                  <li><a href="#">IIIT Bhopal</a></li>
-                  <li><a href="#">IIIT Agartala</a></li>
-                  <li><a href="#">IIIT Nagpur</a></li>
-                  <li><a href="#">IIIT Ranchi</a></li>
-                  <li><a href="#">IIIT Surat</a></li>
-                  <li><a href="#">IIIT Bhagalpur</a></li>
-                  <li><a href="#">IIIT Raichur</a></li>
-				</ul>
--->
+							<a
+								href="https://jeecounselling.iiitiansnetwork.com/"
+								>Jee Counselling</a
+							>
 						</li>
-						<li class="active"><a href="#">Contact</a></li>
+						<li>
+							<a href="https://placement.iiitiansnetwork.com/"
+								>IIIT Placements</a
+							>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								All IIIT
+							</a>
+							<div
+								class="dropdown-menu all-iiit"
+								aria-labelledby="navbarDropdown"
+								style="max-height: 400px; overflow-y: scroll"
+							>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://agartala.iiitiansnetwork.com"
+									>IIIT Agartala</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://allahabad.iiitiansnetwork.com"
+									>IIIT Allahabad</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://bhagalpur.iiitiansnetwork.com"
+									>IIIT Bhagalpur</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://bhopal.iiitiansnetwork.com"
+									>IIIT Bhopal</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://dharwad.iiitiansnetwork.com"
+									>IIIT Dharward</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://guwahati.iiitiansnetwork.com"
+									>IIIT Guwahati</a
+								>
+
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://gwalior.iiitiansnetwork.com"
+									>IIITM Gwalior</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://jabalpur.iiitiansnetwork.com"
+									>IIITDM Jabalpur</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://kalyani.iiitiansnetwork.com"
+									>IIIT Kalyani</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://kancheepuram.iiitiansnetwork.com"
+									>IIITDM Kancheepuram</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://kota.iiitiansnetwork.com"
+									>IIIT Kota</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://kurnool.iiitiansnetwork.com"
+									>IIITDM Kurnool</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://lucknow.iiitiansnetwork.com"
+									>IIIT Lucknow</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://manipur.iiitiansnetwork.com"
+									>IIIT Manipur</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://nagpur.iiitiansnetwork.com"
+									>IIIT Nagpur</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://pune.iiitiansnetwork.com"
+									>IIIT Pune</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://raichur.iiitiansnetwork.com"
+									>IIIT Raichur</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://ranchi.iiitiansnetwork.com"
+									>IIIT Ranchi</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://sonepat.iiitiansnetwork.com"
+									>IIIT Sonepat</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://sricity.iiitiansnetwork.com"
+									>IIIT Sri City</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://surat.iiitiansnetwork.com"
+									>IIIT Surat</a
+								>
+
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://tiruchirapalli.iiitiansnetwork.com"
+									>IIIT Tiruchirapalli</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://una.iiitiansnetwork.com"
+									>IIIT Una</a
+								>
+								<a
+									class="dropdown-item"
+									target="_blank"
+									href="https://vadodara.iiitiansnetwork.com"
+									>IIIT Vadodara</a
+								>
+							</div>
+						</li>
+						<li>
+							<a href="https://team.iiitiansnetwork.com/"
+								>Our Team</a
+							>
+						</li>
+						<li class="active">
+							<a href="https://contact.iiitiansnetwork.com/"
+								>Contact</a
+							>
+						</li>
 					</ul>
 				</nav>
 				<!-- .nav-menu -->
@@ -177,8 +388,15 @@
 			<section id="contact" class="contact">
 				<div class="container-fluid">
 					<div class="row contact-container">
-						<div class="form-container" data-aos="fade-up" data-aos-delay="200">
-							<div class="section-title form-title" data-aos="fade-up">
+						<div
+							class="form-container"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							<div
+								class="section-title form-title"
+								data-aos="fade-up"
+							>
 								Drop us a line
 							</div>
 							<form
@@ -246,20 +464,40 @@
 									</div>
 								</div>
 								<div>
-									<button type="submit" class="send-btn" id="send-btn" onclick="sendPlane()">
+									<button
+										type="submit"
+										class="send-btn"
+										id="send-btn"
+										onclick="sendPlane()"
+									>
 										Send Message
 									</button>
-									<button type="button" class="send-btn" id="clear-btn" onclick="clearForm()">
+									<button
+										type="button"
+										class="send-btn"
+										id="clear-btn"
+										onclick="clearForm()"
+									>
 										Send another Message
 									</button>
 									<script>
 										function sendPlane() {
-											const name = document.getElementById('name').value;
-											const email = document.getElementById('email').value;
-											const subject = document.getElementById('subject').value;
-											const message = document.getElementById('message').value;
+											const name = document.getElementById(
+												'name'
+											).value;
+											const email = document.getElementById(
+												'email'
+											).value;
+											const subject = document.getElementById(
+												'subject'
+											).value;
+											const message = document.getElementById(
+												'message'
+											).value;
 
-											const plane = document.getElementById('sent-msg-section');
+											const plane = document.getElementById(
+												'sent-msg-section'
+											);
 
 											if (
 												name.length >= 3 && //minlen of name > 3
@@ -271,25 +509,46 @@
 											) {
 												plane.style.display = 'block';
 												setTimeout(() => {
-													plane.style.display = 'none';
-													document.getElementById('send-btn').style.display = 'none';
-													document.getElementById('clear-btn').style.display = 'block';
+													plane.style.display =
+														'none';
+													document.getElementById(
+														'send-btn'
+													).style.display = 'none';
+													document.getElementById(
+														'clear-btn'
+													).style.display = 'block';
 												}, 2100);
 											}
 										}
 										function clearForm() {
-											document.getElementById('name').value = '';
-											document.getElementById('email').value = '';
-											document.getElementById('subject').value = '';
-											document.getElementById('message').value = '';
-											document.getElementById('send-btn').style.display = 'block';
-											document.getElementById('clear-btn').style.display = 'none';
+											document.getElementById(
+												'name'
+											).value = '';
+											document.getElementById(
+												'email'
+											).value = '';
+											document.getElementById(
+												'subject'
+											).value = '';
+											document.getElementById(
+												'message'
+											).value = '';
+											document.getElementById(
+												'send-btn'
+											).style.display = 'block';
+											document.getElementById(
+												'clear-btn'
+											).style.display = 'none';
 										}
 									</script>
 								</div>
 							</form>
 						</div>
-						<div class="contact-svg-container" data-aos="fade-down" data-aos-delay="200">
+						<div
+							class="contact-svg-container"
+							data-aos="fade-down"
+							data-aos-delay="200"
+						>
 							<img src="./img/contact.svg" class="contact-svg" />
 						</div>
 					</div>
@@ -307,7 +566,10 @@
 					<span id="follow">Follow</span>
 					<span id="us">Us</span>
 					<br />
-					<i class="fa fa-angle-double-down down-arrow" aria-hidden="true"></i>
+					<i
+						class="fa fa-angle-double-down down-arrow"
+						aria-hidden="true"
+					></i>
 				</p>
 			</div>
 
@@ -346,7 +608,10 @@
 								href="https://www.youtube.com/channel/UCFlPhj8XnKBWc1cNSC8IedA"
 								>&nbsp;</a
 							>
-							<a data-aos="fade-up" class="fa fa-twitter" href="https://twitter.com/iiitiansnetwork"
+							<a
+								data-aos="fade-up"
+								class="fa fa-twitter"
+								href="https://twitter.com/iiitiansnetwork"
 								>&nbsp;</a
 							>
 						</div>
@@ -360,17 +625,24 @@
 					<span id="follow">Mail</span>
 					<span id="us">Us</span>
 					<br />
-					<i class="fa fa-angle-double-down down-arrow" aria-hidden="true"></i>
+					<i
+						class="fa fa-angle-double-down down-arrow"
+						aria-hidden="true"
+					></i>
 				</p>
 			</div>
 
 			<section>
 				<div class="mail-container text-center" id="mail-container">
 					<h3 data-aos="fade-up" class="text-center contact-mail">
-						<a href="mailto:contact@iiitiansnetwork.com">contact@iiitiansnetwork.com<br /></a>
+						<a href="mailto:contact@iiitiansnetwork.com"
+							>contact@iiitiansnetwork.com<br
+						/></a>
 					</h3>
 					<h3 data-aos="fade-up" class="text-center contact-mail">
-						<a href="mailto:iiitiansnetwork@gmail.com">iiitiansnetwork@gmail.com<br /></a>
+						<a href="mailto:iiitiansnetwork@gmail.com"
+							>iiitiansnetwork@gmail.com<br
+						/></a>
 					</h3>
 				</div>
 			</section>
@@ -415,7 +687,11 @@
 			<div class="footer-top">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-3 col-md-6 footer-contact" data-aos="fade-up" data-aos-delay="100">
+						<div
+							class="col-lg-3 col-md-6 footer-contact"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
 							<h3>IIITians Network</h3>
 							<p>
 								A never ending connection...<br /><br />
@@ -433,77 +709,126 @@
 							</p>
 						</div>
 
-						<div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="200">
+						<div
+							class="col-lg-3 col-md-6 footer-links"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
 							<h4>Useful Links</h4>
 							<ul>
 								<li>
 									<i class="bx bx-chevron-right"></i>
-									<a href="https://iiitiansnetwork.com/">Home</a>
+									<a href="https://iiitiansnetwork.com/"
+										>Home</a
+									>
 								</li>
 								<li>
 									<i class="bx bx-chevron-right"></i>
-									<a href="https://iiitiansnetwork.com/">News</a>
+									<a href="https://iiitiansnetwork.com/"
+										>News</a
+									>
 								</li>
 								<li>
 									<i class="bx bx-chevron-right"></i>
-									<a href="https://alliiit.iiitiansnetwork.com/">All IIIT</a>
+									<a
+										href="https://alliiit.iiitiansnetwork.com/"
+										>All IIIT</a
+									>
 								</li>
 								<li>
 									<i class="bx bx-chevron-right"></i>
-									<a href="https://contact.iiitiansnetwork.com">Contact Us</a>
+									<a
+										href="https://contact.iiitiansnetwork.com"
+										>Contact Us</a
+									>
 								</li>
 							</ul>
 						</div>
 
-						<div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="300">
+						<div
+							class="col-lg-3 col-md-6 footer-links"
+							data-aos="fade-up"
+							data-aos-delay="300"
+						>
 							<h4>Our Community</h4>
 							<ul>
 								<li>
 									<i class="bx bx-chevron-right"></i>
-									<a href="http://team.iiitiansnetwork.com/">Core Team</a>
+									<a href="http://team.iiitiansnetwork.com/"
+										>Core Team</a
+									>
 								</li>
 								<li>
 									<i class="bx bx-chevron-right"></i>
-									<a href="http://team.iiitiansnetwork.com/#web">Web Team</a>
+									<a
+										href="http://team.iiitiansnetwork.com/#web"
+										>Web Team</a
+									>
 								</li>
 								<li>
 									<i class="bx bx-chevron-right"></i>
-									<a href="http://team.iiitiansnetwork.com/#design">Design Team</a>
+									<a
+										href="http://team.iiitiansnetwork.com/#design"
+										>Design Team</a
+									>
 								</li>
 								<li>
 									<i class="bx bx-chevron-right"></i>
-									<a href="http://team.iiitiansnetwork.com/#design">Animation Team</a>
+									<a
+										href="http://team.iiitiansnetwork.com/#design"
+										>Animation Team</a
+									>
 								</li>
 							</ul>
 						</div>
 
-						<div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="400">
+						<div
+							class="col-lg-3 col-md-6 footer-links"
+							data-aos="fade-up"
+							data-aos-delay="400"
+						>
 							<h4>Our Social Networks</h4>
 							<p>Follow us to stay connected with IIITs</p>
 							<div class="social-links mt-3">
-								<a href="https://t.me/joinchat/PbhPfBW9YSqXvAS20Y09ng" class="telegram"
+								<a
+									href="https://t.me/joinchat/PbhPfBW9YSqXvAS20Y09ng"
+									class="telegram"
 									><i class="bx bxl-telegram"></i
 								></a>
-								<a href="https://www.facebook.com/iiitians.network/?fref=tag" class="facebook"
+								<a
+									href="https://www.facebook.com/iiitians.network/?fref=tag"
+									class="facebook"
 									><i class="bx bxl-facebook"></i
 								></a>
-								<a href="https://www.instagram.com/iiitians.network/" class="instagram"
+								<a
+									href="https://www.instagram.com/iiitians.network/"
+									class="instagram"
 									><i class="bx bxl-instagram"></i
 								></a>
-								<a href="https://www.linkedin.com/company/53184003" class="linkedin"
+								<a
+									href="https://www.linkedin.com/company/53184003"
+									class="linkedin"
 									><i class="bx bxl-linkedin"></i
 								></a>
-								<a href="https://www.youtube.com/channel/UCFlPhj8XnKBWc1cNSC8IedA" class="linkedin"
+								<a
+									href="https://www.youtube.com/channel/UCFlPhj8XnKBWc1cNSC8IedA"
+									class="linkedin"
 									><i class="bx bxl-youtube"></i
 								></a>
 							</div>
 							<p>
 								<br />Developed by<br />
 								<b>
-									<a href="https://instagram.com/r_d.t">RDT...</a>
+									<a href="https://instagram.com/r_d.t"
+										>RDT...</a
+									>
 								</b>
 								<br />
-								<b><a href="https://vibhanshujainiiitr.github.io/">Vibhanshu Jain</a></b
+								<b
+									><a
+										href="https://vibhanshujainiiitr.github.io/"
+										>Vibhanshu Jain</a
+									></b
 								><br />
 							</p>
 						</div>
